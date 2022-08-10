@@ -35,7 +35,7 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Join Us NOW !</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -52,12 +52,14 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form">
-            <h2>TELL US YOUR NAME</h2>
-            <p type="First Name:"><input ng-model="user.fn" placeholder="Write your first name here.."></input></p>
-            <p type="Last Name:"><input ng-model="user.ln" placeholder="Write your last name here.."></input></p>
+        <form class="form" style="height: 700px;">
+            <h2 style="width: 100%">???</h2>
+            <p type="Gender:"><input  ng-model="user.gender" placeholder="Your gender.." required></input></p>
+            <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?" required></input></p>
+            <p type="Height:"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required></input></p>
+            <p type="Weight:"><input ng-model="user.we" placeholder="Your weight ? (Kg)" required></input></p>
             
-            <a href="http://localhost/techwiz/#!/form2">
+            <a href="http://localhost/techwiz/#!/form3">
                 <input type="button" value="Continue" class="form-button" ng-click="submit()">
             </a>
         </form>

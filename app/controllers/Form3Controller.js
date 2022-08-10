@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('FormController', function (sessionService, $scope, $interval, $http) {
+app.controller('Form2Controller', function (sessionService, $scope, $interval, $http) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -14,8 +14,14 @@ app.controller('FormController', function (sessionService, $scope, $interval, $h
         });
     }
     getVisitorCounter();
+
+    
+    $scope.name = sessionService.get('username');
     
     $scope.submit = function() {
-        sessionService.set('username', $scope.user.fn);
+        sessionService.set('gender', $scope.user.gender);
+        sessionService.set('age', $scope.user.age);
+        sessionService.set('height', $scope.user.he);
+        sessionService.set('weight', $scope.user.we);
     }
 });

@@ -6,9 +6,9 @@ app.config(['$routeProvider',
 				templateUrl: 'views/home.html',
 				controller: 'HomeController'
 			}).
-			when('/user', {
-				templateUrl: 'views/user.html',
-				controller: 'UserController'
+			when('/form', {
+				templateUrl: 'views/form.html',
+				controller: 'FormController'
 			});
 		
 	}]);

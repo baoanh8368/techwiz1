@@ -1,3 +1,5 @@
+CREATE DATABASE fit4life;
+
 CREATE TABLE `Counter` (
   `vcid`       int(6) NOT NULL,  
   `visits`     int(10) NOT NULL

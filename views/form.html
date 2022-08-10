@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="assets/css/form1.css">
+<script src="assets/js/form1.js"></script>
+<header class="header" data-header>
+    <div class="container">
+
+        <a href="#" class="logo">
+            <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);"></i>
+
+            <span class="span">Fit4Life</span>
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+            <button class="nav-close-btn" data-nav-toggler>
+                <ion-icon name="close-sharp"></ion-icon>
+            </button>
+
+            <ul class="navbar-list">
+
+                <li>
+                    <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                </li>
+
+
+
+                <li>
+                    <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Join Us NOW !</a>
+
+        <button class="nav-open-btn" data-nav-toggler>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+    </div>
+</header>
+
+
+
+<section class="section hero bg-dark has-after has-bg-image" id="home" data-section
+    style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
+    <div class="container">
+
+        <form class="form">
+            <h2>TELL US YOUR NAME</h2>
+            <p type="First Name:"><input ng-model="user.fn" placeholder="Write your first name here.."></input></p>
+            <p type="Last Name:"><input ng-model="user.ln" placeholder="Write your last name here.."></input></p>
+            
+            <a href="http://localhost/techwiz/#!/form2">
+                <input type="button" value="Continue" class="form-button" ng-click="submit()">
+            </a>
+        </form>
+        
+        <div class="hero-banner">
+
+            <img src="./assets/images/doctor.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" alt="" class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" alt="" class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+                class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer class="footer" style="margin-top: 50px ;">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')"
+        id="footer">
+        <div class="container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);;"></i>
+
+                    <span class="span">Fit4Life</span>
+                </a>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7295561235906!2d105.84769451485397!3d21.00347528601206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad58455db2ab%3A0x9b3550bc22fd8bb!2zNTQgUC4gTMOqIFRoYW5oIE5naOG7iywgQsOhY2ggS2hvYSwgSGFpIELDoCBUcsawbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1659676268072!5m2!1sen!2s"
+                    width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+            </div>
+
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title has-before">Contact Us</p>
+                </li>
+
+
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <a href="" class="footer-link">&emsp;54 Lê Thanh Nghị, Hai Bà Trưng
+                            District, Hà Nội</a>
+                    </div>
+                </li>
+
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <a href="" class="footer-link">minh.nv.2045@aptechlearning.edu.vn</a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title has-before">General</p>
+                </li>
+                <li><a href=""><i class="fa-solid fa-clock"></i>&emsp;{{theTime}}</a></li>
+                <li><a href=""><i class="fa-solid fa-eye"></i>&emsp;Visitor Counts: &nbsp;{{vcounter}}</a></li>
+                <li><a href=""><i class="fa-solid fa-location-pin"></i>&emsp;Your Location: <span id="city"></span>
+                        <span id="country"></span> </a></li>
+                <li><a href=""><i class="fa-solid fa-street-view"></i>&emsp;Your IP: <span id="ip"></span> </a></li>
+                <li><a href="">Copyright © 2022 C2112L TechC</a></li>
+
+            </ul>
+            </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+</footer>

@@ -35,8 +35,7 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
-                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -53,30 +52,22 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form" style="height: 600px;" ng-submit="submit()">
-            <h2 style="width: 400px">YOUR MEDICINE DOSAGE</h2>
-            <p type="Medicine {{index}}:"><input type="type" ng-model="user.med" placeholder="Your Medicine... "
-                    required></input></p>
-            <p type="From Date:"><input type="date" ng-model="user.fd" placeholder="From when... " required></input></p>
-            <p type="To Date:"><input type="date" ng-model="user.td" placeholder="To when... " required></input></p>
-            <table style="margin-top: 20px; margin-bottom: -30px;">
-                <tr>
-                    <th>Day</th>
-                    <th>Night</th>
-                    <th style=" padding-left: 40px; "><input type="button" value="Add more medicine" ng-click="add()" class="form-button" style="width: 100%; margin: 0px; background-color: #32cd32;"></th>
-                </tr>
-                <tr>
-                    <td><input type="number" ng-model="user.day" style="width: 50px;" min="0" ng-init="user.day=0" required></input></td>
-                    <td><input type="number" ng-model="user.night" style="width: 50px;" min="0" ng-init="user.night=0" required></input></td>
-                    
-                </tr>
-            </table>
-
-
-            <input type="submit" value="Continue" class="form-button">
-
+        <form class="form" style="height: 400px;" ng-submit="submit()">
+            <h2>YOUR APPOINTMENTS</h2>
+            <p type="Choose the doctor:"><select name="doctors" ng-model="user.doc" ng-init="user.doc='Dr. Stephen Strange'">
+                <option value="Dr. Stephen Strange">Dr. Stephen Strange</option>
+                <option value="Dr. Harry Potter">Dr. Harry Potter</option>
+                <option value="Dr. Chris Hemsworth">Dr. Chris Hemsworth</option>
+                <option value="Dr. Peter Parker">Dr. Peter Parker</option>
+              </select></p>
+            <p type="Date:"><input type="datetime-local" ng-model="user.date" required></input></p>
+        
+            
+            
+            <input type="submit" value="Continue" class="form-button" >
+           
         </form>
-
+        
         <div class="hero-banner">
 
             <img src="./assets/images/doctor.png" width="660" height="753" alt="hero banner" class="w-100">

@@ -35,7 +35,7 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Join Us NOW !</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -52,14 +52,14 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form" ng-submit = "submit()">
-            <h2>TELL US YOUR NAME</h2>
-            <p type="First Name:"><input ng-model="user.fn" placeholder="How can we call you ?" required></p>
-            <p type="Last Name:"><input ng-model="user.ln" placeholder="Write your last name here.."></p>
+        <form class="form" style="height: 450px;" ng-submit="submit()">
+            <h2>MEDICINE DOSAGE</h2>
+            <p type="Blood Pressure:"><input type="number" ng-model="user.bp" placeholder="Your blood pressure at the moment ? (mmHg)" required></input></p>
+            <p type="Blood Sugar:"><input type="number" ng-model="user.bs" placeholder="Your blood sugar at the moment ? (mg/dL)" required></input></p>
             
             
-                <input type="submit" value="Continue " class="form-button" ng-click="submit()">
-            
+            <input type="submit" value="Continue" class="form-button" >
+           
         </form>
         
         <div class="hero-banner">
@@ -94,7 +94,7 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);;"></i>
 
                     <span class="span">HealthPlus</span>
                 </a>

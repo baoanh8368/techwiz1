@@ -18,6 +18,10 @@ app.config(['$routeProvider',
 				templateUrl: 'views/form3.html',
 				controller: 'Form3Controller'
 			}).
+			when('/dosage', {
+				templateUrl: 'views/dosage.html',
+				controller: 'DosageController'
+			}).
 			when('/BMI', {
 				templateUrl: 'views/BMI.html',
 				controller: 'BMIController'

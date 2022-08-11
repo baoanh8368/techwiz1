@@ -71,11 +71,6 @@ p:before {
     color: #fff
 }
 
-/* input[type=radio] {
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
-} */
 
 .gender {
     display: flex;
@@ -92,3 +87,4 @@ p:before {
     height: 70%;
     
 }
+

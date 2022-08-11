@@ -71,8 +71,23 @@ p:before {
     color: #fff
 }
 
-input[type=radio] {
+/* input[type=radio] {
     padding: 0px;
     margin: 0px;
     display: inline-block;
+} */
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.gender label {
+    width: 10%;
+}
+
+.gender input {
+    width: 70%;
+    height: 70%;
+    
 }

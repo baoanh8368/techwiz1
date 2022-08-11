@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 800px;
     min-height: 300px;
-    border: 1px solid #fc7904;
+    border: 1px solid rgb(63, 190, 248);
     background-color: #fff;
   }
   
@@ -34,10 +34,10 @@
   .tabs button {
     width: 100%;
     padding: 10px 20px;
-    border: 1px solid #fc7904;
+    border: 1px solid rgb(63, 190, 248);
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #fc7904;
+    background-color: rgb(63, 190, 248);
     color: #fff;
     opacity: 0.9;
   }

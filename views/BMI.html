@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="assets/css/form1.css">
-<script src="assets/js/form1.js"></script>
+<link rel="stylesheet" href="assets/css/BMI.css">
+<script src="assets/js/BMI.js"></script>
 <header class="header" data-header>
     <div class="container">
 
@@ -35,7 +36,8 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
+                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -51,21 +53,44 @@
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
-
-        
-        
-        <div class="hero-banner">
-
-            <img src="./assets/images/doctor.png" width="660" height="753" alt="hero banner" class="w-100">
-
-            <img src="./assets/images/hero-circle-one.png" width="666" height="666" alt="" class="circle circle-1">
-            <img src="./assets/images/hero-circle-two.png" width="666" height="666" alt="" class="circle circle-2">
-
-            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
-                class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
-
+        <div class="bmi" style="margin-top: -100px;">
+            <h2 > YOUR BMI : {{bmi}} </h2>
+            <h3 > {{bodytype}}</h3>
+            <a href="http://localhost/techwiz/#!/form3" class="btn btn-secondary" style="margin-bottom: 40px;margin-top: 20px; margin-left:120px;" >Continue</a>
         </div>
+
+        <img src="assets/images/{{content}}" alt="image" style="margin-left: 80px;">
+
+        <div class="alltabs">
+
+            <div class="tab-container">
+                <!--  Tab Buttons  -->
+                <div class="tabs">
+                    <button class="tab active">Status</button>
+                    <button class="tab non-active">Risk</button>
+                    <button class="tab non-active">Suggestion</button>
+
+                </div>
+                <!-- Tab Content  -->
+                <div class="tab-content">
+                    <h2 style="width: 400px; font-size: 20px;">{{status}}</h2>
+
+                </div>
+                <div class="tab-content hidden">
+                    <h2 style="width: 400px; font-size: 20px;">{{risk}}</h2>
+                </div>
+                <div class="tab-content hidden">
+                    <a href="https://www.goodhousekeeping.com/health/fitness/g33326349/best-youtube-workouts/">
+                        <h2 style="width: 400px; font-size: 20px;">20+ Best YouTube Workout Channels for Every Type of
+                            Fitness</h2>
+                    </a>
+                    <p>These free options include yoga, HIIT, and dance classes from our favorite instructors.</p>
+                </div>
+            </div>
+        </div>
+        
+
+
     </div>
 </section>
 

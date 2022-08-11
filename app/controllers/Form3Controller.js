@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('Form2Controller', function (sessionService, $scope, $interval, $http) {
+app.controller('Form3Controller', function (sessionService, $scope, $interval, $http) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -18,10 +18,5 @@ app.controller('Form2Controller', function (sessionService, $scope, $interval, $
     
     $scope.name = sessionService.get('username');
     
-    $scope.submit = function() {
-        sessionService.set('gender', $scope.user.gender);
-        sessionService.set('age', $scope.user.age);
-        sessionService.set('height', $scope.user.he);
-        sessionService.set('weight', $scope.user.we);
-    }
+    
 });

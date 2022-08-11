@@ -26,8 +26,6 @@ app.controller('BasicController', function (sessionService, $scope, $interval, $
         sessionService.set('age', $scope.user.age);
         sessionService.set('height', $scope.user.he);
         sessionService.set('weight', $scope.user.we);
-        sessionService.set('pressure', $scope.user.bp);
-        sessionService.set('sugar', $scope.user.bs);
         $location.path('/BMI');
     };
 });

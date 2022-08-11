@@ -1,0 +1,62 @@
+.bmi h2 {
+    color: rgb(63, 190, 248);
+}
+
+  
+.alltabs {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -120px;
+    
+  }
+  
+  h1 {
+    color: #fff;
+  }
+  
+  .tab-container {
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    border: 1px solid #fc7904;
+    background-color: #fff;
+  }
+  
+  .tabs {
+    display: flex;
+    overflow: scroll;
+  }
+  .tabs button {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #fc7904;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fc7904;
+    color: #fff;
+    opacity: 0.9;
+  }
+  .tabs button:hover {
+    opacity: 1;
+  }
+  .tabs .non-active {
+    opacity: 0.6;
+  }
+  
+  .tab-content {
+    padding: 10px 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  a {
+    color: #fc7904;
+    text-decoration: none;
+  }
+  
+  

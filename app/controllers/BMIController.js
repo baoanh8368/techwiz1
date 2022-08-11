@@ -15,6 +15,7 @@ app.controller('BMIController', function (sessionService, $scope, $interval, $ht
     }
     getVisitorCounter();
 
+    $scope.test = sessionService.get('gender');
 
     $scope.name = sessionService.get('username');
 

@@ -54,7 +54,11 @@
 
         <form class="form"  ng-submit="submit()" style="margin-top: -100px;" >
             <h2 style="width: 100%">More Info</h2>
-            <p type="Gender:"><input  ng-model="user.gender" placeholder="Your gender.." required></p>
+            
+                <input type="radio" ng-model="user.gender" value="Male" > Male
+           
+                <input type="radio" ng-model="user.gender" value="Female" ng-checked=true> Female
+            
             <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?" required></p>
             <p type="Height:"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required></p>
             <p type="Weight:"><input type="number" ng-model="user.we" placeholder="Your weight ? (Kg)" required></p>
@@ -94,7 +98,7 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);;"></i>
+                    <i class="fa-solid fa-heart"></i>
 
                     <span class="span">HealthPlus</span>
                 </a>

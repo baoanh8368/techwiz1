@@ -84,6 +84,7 @@ p:before {
 
 .gender label {
     width: 10%;
+    color: #78788c;
 }
 
 .gender input {

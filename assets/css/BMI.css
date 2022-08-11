@@ -1,3 +1,7 @@
+:root {
+  --blue-c :rgb(63, 190, 248);
+}
+
 .bmi h2 {
     color: rgb(63, 190, 248);
 }
@@ -21,7 +25,7 @@
     width: 100%;
     max-width: 800px;
     min-height: 300px;
-    border: 1px solid #fc7904;
+    border: 1px solid var(--blue-c);
     background-color: #fff;
   }
   
@@ -32,10 +36,10 @@
   .tabs button {
     width: 100%;
     padding: 10px 20px;
-    border: 1px solid #fc7904;
+    border: 1px solid var(--blue-c);
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #fc7904;
+    background-color: var(--blue-c);
     color: #fff;
     opacity: 0.9;
   }

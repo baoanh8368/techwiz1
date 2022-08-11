@@ -71,8 +71,3 @@ p:before {
     color: #fff
 }
 
-input[type=radio] {
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
-}

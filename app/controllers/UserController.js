@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('ScheduleController', function (sessionService, $scope, $interval, $http, $location) {
+app.controller('UserController', function (sessionService, $scope, $interval, $http, $location) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -18,9 +18,5 @@ app.controller('ScheduleController', function (sessionService, $scope, $interval
     $scope.name = sessionService.get('username');
     
     
-    $scope.submit = function() {
-        sessionService.set('doctor', $scope.user.doc);
-        sessionService.set('date', $scope.user.date);
-        $location.path('/user');
-    };
+    
 });

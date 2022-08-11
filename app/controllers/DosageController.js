@@ -14,7 +14,7 @@ app.controller('DosageController', function (sessionService, $scope, $interval, 
         });
     }
     getVisitorCounter();
-    
+    $scope.name = sessionService.get('username');
 
     $scope.index = 1;
 

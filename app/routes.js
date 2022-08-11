@@ -10,6 +10,10 @@ app.config(['$routeProvider',
 				templateUrl: 'views/form.html',
 				controller: 'FormController'
 			}).
+			when('/basic', {
+				templateUrl: 'views/basic.html',
+				controller: 'BasicController'
+			}).
 			when('/form3', {
 				templateUrl: 'views/form3.html',
 				controller: 'Form3Controller'
@@ -17,14 +21,6 @@ app.config(['$routeProvider',
 			when('/BMI', {
 				templateUrl: 'views/BMI.html',
 				controller: 'BMIController'
-			}).
-			when('/form2', {
-				templateUrl: 'views/form2.html',
-				controller: 'BasicController'
-			}).
-			when('/asd', {
-				templateUrl: 'views/asd.html',
-				controller: 'asdController'
 			});
 		
 	}]);

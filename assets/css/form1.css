@@ -71,3 +71,19 @@ p:before {
     color: #fff
 }
 
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.gender label {
+    width: 10%;
+}
+
+.gender input {
+    width: 70%;
+    height: 70%;
+    
+}
+

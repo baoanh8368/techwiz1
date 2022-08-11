@@ -27,11 +27,8 @@
     width: 100%;
     max-width: 800px;
     min-height: 300px;
-<<<<<<< HEAD
     border: 1px solid rgb(63, 190, 248);
-=======
     border: 1px solid var(--blue-c);
->>>>>>> 8dd6aeb06920ab712cd5a0c839136bf35d634ad4
     background-color: #fff;
   }
   
@@ -42,17 +39,14 @@
   .tabs button {
     width: 100%;
     padding: 10px 20px;
-<<<<<<< HEAD
     border: 1px solid rgb(63, 190, 248);
     cursor: pointer;
     text-transform: uppercase;
     background-color: rgb(63, 190, 248);
-=======
     border: 1px solid var(--blue-c);
     cursor: pointer;
     text-transform: uppercase;
     background-color: var(--blue-c);
->>>>>>> 8dd6aeb06920ab712cd5a0c839136bf35d634ad4
     color: #fff;
     opacity: 0.9;
   }

@@ -35,7 +35,8 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
+                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -52,16 +53,33 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form" style="height: 450px;" ng-submit="submit()">
-            <h2>MEDICINE DOSAGE</h2>
-            <p type="Blood Pressure:"><input type="number" ng-model="user.bp" placeholder="Your blood pressure at the moment ? (mmHg)" required></input></p>
-            <p type="Blood Sugar:"><input type="number" ng-model="user.bs" placeholder="Your blood sugar at the moment ? (mg/dL)" required></input></p>
-            
-            
-            <input type="submit" value="Continue" class="form-button" >
-           
+        <form class="form" style="height: 600px;" ng-submit="submit()">
+            <h2 style="width: 400px">YOUR MEDICINE DOSAGE</h2>
+            <p type="Medicine {{index}}:"><input type="text" ng-model="user.med"
+                    placeholder="Your Medicine... "></input></p>
+            <p type="From Date:"><input type="date" ng-model="user.fd" placeholder="From when... "></input></p>
+            <p type="To Date:"><input type="date" ng-model="user.td" placeholder="To when... "></input></p>
+            <table style="margin-top: 20px; margin-bottom: -30px;">
+                <tr>
+                    <th>Day</th>
+                    <th>Night</th>
+                    <th style=" padding-left: 40px; "><input type="button" value="Add more medicine" ng-click="add()"
+                            class="form-button" style="width: 100%; margin: 0px; background-color: #32cd32;"></th>
+                </tr>
+                <tr>
+                    <td><input type="number" ng-model="user.day" style="width: 50px;" min="0"
+                            ng-init="user.day=0"></input></td>
+                    <td><input type="number" ng-model="user.night" style="width: 50px;" min="0"
+                            ng-init="user.night=0"></input></td>
+
+                </tr>
+            </table>
+
+
+            <input type="submit" value="Continue" class="form-button">
+
         </form>
-        
+
         <div class="hero-banner">
 
             <img src="./assets/images/doctor.png" width="660" height="753" alt="hero banner" class="w-100">

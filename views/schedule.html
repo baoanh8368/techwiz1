@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="assets/css/form1.css">
-<link rel="stylesheet" href="assets/css/BMI.css">
-<script src="assets/js/BMI.js"></script>
+<script src="assets/js/form1.js"></script>
 <header class="header" data-header>
     <div class="container">
 
@@ -36,8 +35,7 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
-                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -53,44 +51,35 @@
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
-        <div class="bmi" style="margin-top: -200px;">
-            <h2 > YOUR BMI : {{bmi}} </h2>
-            <h3 > {{bodytype}}</h3>
-            <a href="http://localhost/techwiz/#!/form3" class="btn btn-secondary" style="margin-bottom: 40px;margin-top: 20px; margin-left:120px;" >Continue <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-        </div>
 
-        <img src="assets/images/{{content}}" alt="image" style="margin-left: 80px;">
-
-        <div class="alltabs">
-
-            <div class="tab-container">
-                <!--  Tab Buttons  -->
-                <div class="tabs">
-                    <button class="tab active">Status</button>
-                    <button class="tab non-active">Risk</button>
-                    <button class="tab non-active">Suggestion</button>
-
-                </div>
-                <!-- Tab Content  -->
-                <div class="tab-content">
-                    <h2 style="width: 400px; font-size: 20px;">{{status}}</h2>
-
-                </div>
-                <div class="tab-content hidden">
-                    <h2 style="width: 400px; font-size: 20px;">{{risk}}</h2>
-                </div>
-                <div class="tab-content hidden">
-                    <a href="https://www.goodhousekeeping.com/health/fitness/g33326349/best-youtube-workouts/">
-                        <h2 style="width: 400px; font-size: 20px;">20+ Best YouTube Workout Channels for Every Type of
-                            Fitness</h2>
-                    </a>
-                    <p>These free options include yoga, HIIT, and dance classes from our favorite instructors.</p>
-                </div>
-            </div>
-        </div>
+        <form class="form" style="height: 400px;" ng-submit="submit()">
+            <h2>YOUR APPOINTMENTS</h2>
+            <p type="Choose the doctor:"><select name="doctors" ng-model="user.doc" ng-init="user.doc='Dr. Stephen Strange'">
+                <option value="Dr. Stephen Strange">Dr. Stephen Strange</option>
+                <option value="Dr. Harry Potter">Dr. Harry Potter</option>
+                <option value="Dr. Chris Hemsworth">Dr. Chris Hemsworth</option>
+                <option value="Dr. Peter Parker">Dr. Peter Parker</option>
+              </select></p>
+            <p type="Date:"><input type="datetime-local" ng-model="user.date" required></input></p>
         
+            
+            
+            <input type="submit" value="Continue" class="form-button" >
+           
+        </form>
+        
+        <div class="hero-banner">
 
+            <img src="./assets/images/doctor.png" width="660" height="753" alt="hero banner" class="w-100">
 
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" alt="" class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" alt="" class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+                class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+        </div>
     </div>
 </section>
 
@@ -111,7 +100,7 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);;"></i>
 
                     <span class="span">HealthPlus</span>
                 </a>

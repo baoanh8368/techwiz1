@@ -22,6 +22,14 @@ app.config(['$routeProvider',
 				templateUrl: 'views/dosage.html',
 				controller: 'DosageController'
 			}).
+			when('/schedule', {
+				templateUrl: 'views/schedule.html',
+				controller: 'ScheduleController'
+			}).
+			when('/user', {
+				templateUrl: 'views/user.html',
+				controller: 'UserController'
+			}).
 			when('/BMI', {
 				templateUrl: 'views/BMI.html',
 				controller: 'BMIController'

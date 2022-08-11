@@ -16,6 +16,7 @@
     position: static;
     display: inline-block;
     margin-bottom: 200px;
+    margin-top: -100px;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h2 {
     border-bottom: 3px solid rgb(63, 190, 248);
 }
 
-input{
+input, select{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -38,6 +39,8 @@ input{
     transition: all .3s;
     border-bottom: 2px solid rgb(63, 190, 248);
 }
+
+
 
 input:focus {
     border-bottom: 2px solid #78788c

@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('Form2Controller', function (sessionService, $scope, $interval, $http) {
+app.controller('BasicController', function (sessionService, $scope, $interval, $http, $location) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -16,8 +16,11 @@ app.controller('Form2Controller', function (sessionService, $scope, $interval, $
     getVisitorCounter();
 
     
+    
     $scope.name = sessionService.get('username');
     
+    $scope.test1 = "Xin Chao";
+
     $scope.submit = function() {
         sessionService.set('gender', $scope.user.gender);
         sessionService.set('age', $scope.user.age);
@@ -25,5 +28,6 @@ app.controller('Form2Controller', function (sessionService, $scope, $interval, $
         sessionService.set('weight', $scope.user.we);
         sessionService.set('pressure', $scope.user.bp);
         sessionService.set('sugar', $scope.user.bs);
-    }
+        $location.path('/BMI');
+    };
 });

@@ -63,7 +63,7 @@
             
             <div class="gender">
                 <label for="">Male</label>
-                <input type="radio" ng-model="user.gender" value="Male" >
+                <input type="radio" ng-model="user.gender" value="Male" ng-submit="submit()">
             </div>
             <div class="gender" >
                 <label for="">Female</label>
@@ -73,7 +73,7 @@
             <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?" required></p>
             <p type="Height:"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required></p>
             <p type="Weight:"><input type="number" ng-model="user.we" placeholder="Your weight ? (Kg)" required></p>
-            <input type="submit" value="Continue" ng-click="submit()"  class="form-button">
+            <input type="submit" value="Continue"   class="form-button">
             
         </form>
         

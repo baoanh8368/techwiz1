@@ -1,4 +1,4 @@
-var URL = "http://localhost/techwiz";
+
 app.controller('TYController', function ($timeout, $location, $interval, $scope) {
     $scope.time = 5;
     $timeout(function () {

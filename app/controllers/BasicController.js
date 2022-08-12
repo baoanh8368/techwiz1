@@ -7,10 +7,11 @@ app.controller('BasicController', function (sessionService, $scope, $interval, $
     
     function getVisitorCounter() {
         $http({
-            url: URL + '/api/visitor/visitor.php',
+            url: URL + '/JSON/healthplus.json',
             method: 'GET'
         }).then(function (res) {
-            $scope.vcounter = res.data;
+            res.data.visitor++;
+            $scope.vcounter = res.data.visitor;
         });
     }
     getVisitorCounter();

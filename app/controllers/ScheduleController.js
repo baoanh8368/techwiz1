@@ -24,6 +24,6 @@ app.controller('ScheduleController', function (sessionService, $scope, $interval
         sessionService.set('date', $scope.user.date);
         sessionService.set('phone', $scope.user.phone);
         sessionService.set('address', $scope.user.address);
-        $location.path('/user');
+        $location.path('/workout');
     };
 });

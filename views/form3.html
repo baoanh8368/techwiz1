@@ -54,10 +54,11 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form" style="height: 450px;" ng-submit="submit()">
+        <form class="form" style="height: 550px;" ng-submit="submit()">
             <h2>PERSONAL HEALTH VITALS</h2>
-            <p type="Blood Pressure:"><input type="number" ng-model="user.bp" placeholder="Your blood pressure at the moment ? (mmHg)" required></input></p>
-            <p type="Blood Sugar:"><input type="number" ng-model="user.bs" placeholder="Your blood sugar at the moment ? (mg/dL)" required></input></p>
+            <p type="Blood Pressure:"><input type="number" ng-model="user.bp" placeholder="Your blood pressure at the moment ? (mmHg)" ></input></p>
+            <p type="Blood Sugar:"><input type="number" ng-model="user.bs" placeholder="Your blood sugar at the moment ? (mg/dL)" ></input></p>
+            <p type="Heart Rate:"><input type="number" ng-model="user.hr" placeholder="Your heart rate ? (bpm)" ></input></p>
             
             
             <input type="submit" value="Continue" class="form-button" >

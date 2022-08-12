@@ -6,41 +6,41 @@
     box-sizing: border-box;
 }
 
-button[aria-selected="false"] {
+.usertab button[aria-selected="false"] {
     background-color: hsl(207, 100%, 100%);
     color: var(--accent-dark);
     outline: 1px solid #0003;
 }
 
-button[aria-selected="true"] {
+.usertab button[aria-selected="true"] {
     background: var(--accent-blue);
     color: var(--text-clr);
     font-weight: 600;
 }
 
-button[aria-selected="false"]:where(:hover, :focus-visible) {
+.usertab button[aria-selected="false"]:where(:hover, :focus-visible) {
     outline: 2px solid var(--accent-blue);
     outline-offset: -2px;
 }
 
-button[aria-selected="false"]:where(:hover, :focus-visible) .icon__for--tab {
+.usertab button[aria-selected="false"]:where(:hover, :focus-visible) .icon__for--tab {
     color: var(--accent-blue);
 }
 
-button[aria-selected="false"]:where(:hover, :focus-visible) .text__for--tab {
+.usertab button[aria-selected="false"]:where(:hover, :focus-visible) .text__for--tab {
     color: var(--text-clr);
 }
 
-button[aria-selected="false"]:active {
+.usertab button[aria-selected="false"]:active {
     background-color: hsl(207, 100%, 90%);
     transform: scale(0.95);
 }
 
-button[aria-selected="true"] .icon__for--tab {
+.usertab button[aria-selected="true"] .icon__for--tab {
     color: #fff;
 }
 
-.tab__navigation:is(:hover, :focus-visible)
+.usertab .tab__navigation:is(:hover, :focus-visible)
     button[aria-selected="false"]:not(:hover) {
     opacity: 0.8;
     background-color: hsl(207, 10%, 91%);
@@ -67,15 +67,15 @@ button[aria-selected="true"] .icon__for--tab {
     --padding--flow: calc(var(--fullSize) - var(--space-2));
 }
 
-body {
+/* body {
     display: flex;
     /* min-block-size: 100vh; */
     font-size: 16px;
     font-family: sans-serif;
     background-color: rgb(207, 212, 216);
-}
+} */
 
-.tabs {
+.usertab .tabs {
     /* max-inline-size: min(var(--padding--flow), var(--width-max)); */
     height: auto;
     min-inline-size: var(--width-min);
@@ -86,19 +86,19 @@ body {
     box-shadow: 0 0.5em 0.35em #0003, 0 0.8em 1.4em #0003; */
 }
 
-.content--flow {
+.usertab .content--flow {
     --sidebar-width: 13rem;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
 }
 
-.sidebar {
+.usertab .usertab .sidebar {
     padding: var(--space-05);
     flex: 1 1 var(--sidebar-width);
 }
 
-.tab__navigation {
+.usertab .tab__navigation {
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -107,7 +107,7 @@ body {
     /* height: var(--fullSize); */
 }
 
-.tab__button {
+.usertab .tab__button {
     display: flex;
     align-items: center;
     height: 3rem;
@@ -119,11 +119,11 @@ body {
     max-height: 50px;
 }
 
-.tab__button > * {
+.usertab .tab__button > * {
     padding: var(--space-05);
 }
 
-.icon__for--tab {
+.usertab .icon__for--tab {
     display: inline-flex;
     height: 2rem;
     margin-inline: var(-space-05);
@@ -132,14 +132,14 @@ body {
     align-items: center;
 }
 
-.icon__for--tab > i.fas {
+.usertab .icon__for--tab > i.fas {
     margin: 0;
     justify-content: flex-start;
     display: inline-flex;
     font-size: 1.125rem;
 }
 
-.text__for--tab {
+.usertab .text__for--tab {
     display: inline-flex;
     flex-grow: 1;
     align-items: center;
@@ -149,31 +149,31 @@ body {
 }
 
 @media (max-width: 639px) {
-    .sidebar {
+    .usertab .sidebar {
         padding: unset;
     }
-    .tab__button {
+    .usertab .tab__button {
         flex-direction: column;
         border-radius: 0;
         min-height: 3.25rem;
         gap: 0;
     }
 
-    .tab__button > * + * {
+    .usertab .tab__button > * + * {
         min-height: 1rem;
     }
 }
 
 @media (max-width: 560px) {
-    .text__for--tab {
+    .usertab .text__for--tab {
         display: none;
     }
-    .icon__for--tab {
+    .usertab .icon__for--tab {
         margin: auto;
     }
 }
 
-.content__area {
+.usertab .content__area {
     display: flex;
     flex-grow: 999;
     min-height: 20rem;
@@ -182,7 +182,7 @@ body {
     position: relative;
 }
 
-.tab__content {
+.usertab .tab__content {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -190,7 +190,7 @@ body {
     padding: var(--space-05);
 }
 
-.span-tag {
+.usertab .span-tag {
     position: absolute;
     right: 0;
     top: 0;
@@ -201,7 +201,7 @@ body {
     font-weight: 900;
 }
 
-.title {
+.usertab .title {
     line-height: 1.6;
     padding-block-start: var(--space-1);
     color: var(--accent-blue);
@@ -210,7 +210,7 @@ body {
     text-transform: capitalize;
 }
 
-.text {
+.usertab .text {
     max-width: 45ch;
     text-align: center;
     margin-inline: var(--space-1);

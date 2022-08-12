@@ -18,7 +18,7 @@
             <ul class="navbar-list">
 
                 <li>
-                    <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
                 </li>
 
                 <li>
@@ -63,7 +63,7 @@
             
             <div class="gender">
                 <label for="">Male</label>
-                <input type="radio" ng-model="user.gender" value="Male" >
+                <input type="radio" ng-model="user.gender" value="Male" ng-submit="submit()">
             </div>
             <div class="gender" >
                 <label for="">Female</label>
@@ -73,7 +73,7 @@
             <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?" required></p>
             <p type="Height:"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required></p>
             <p type="Weight:"><input type="number" ng-model="user.we" placeholder="Your weight ? (Kg)" required></p>
-            <input type="submit" value="Continue" ng-click="submit()"  class="form-button">
+            <input type="submit" value="Continue"   class="form-button">
             
         </form>
         
@@ -100,7 +100,7 @@
 
 
 
-<footer class="footer" style="margin-top: 10px ;">
+<footer class="footer" style="margin-top: 10px;">
 
     <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')"
         id="footer">
@@ -149,6 +149,14 @@
                         <a href="" class="footer-link">minh.nv.2045@aptechlearning.edu.vn</a>
                     </div>
                 </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
                 <li>
                     <ul class="social-list">
 
@@ -167,6 +175,11 @@
                         <li>
                             <a href="#" class="social-link">
                                 <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
 

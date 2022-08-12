@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="assets/css/med.css">
 
+<script src="assets/js/BMI.js"></script>
 <header class="header" data-header>
     <div class="container">
 
         <a href="#" class="logo">
-            <i class="fa-solid fa-heart"></i>
+            <img src="assets/images/healthyLogo.png" alt="">
 
             <span class="span">HealthPlus</span>
         </a>
@@ -48,8 +49,8 @@
 
 
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
-    style="background-image: url('./assets/images/hero-bg.png'); height: 900px;">
-
+    style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
+    <div class="container">
 
     <form class="form1">
 
@@ -101,7 +102,7 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart"></i>
+                    <img src="assets/images/healthyLogo.png" alt="">
 
                     <span class="span">HealthPlus</span>
                 </a>
@@ -201,3 +202,26 @@
 
 
 </footer>
+
+
+<script>
+    const buttons = document.querySelectorAll('[role="tab"]');
+    const tabPanel = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+  
+    function hideTabContent(e) {
+      tabPanel.forEach((panels) => {
+        panels.hidden = true;
+      });
+      buttons.forEach((tab) => {
+        tab.setAttribute("aria-selected", false);
+      });
+      e.currentTarget.setAttribute("aria-selected", true);
+  
+      const { id } = event.currentTarget;
+      const tabPanels = tabPanel.find(
+        (tabContent) => tabContent.getAttribute("aria-labelledby") === id
+      );
+      tabPanels.hidden = false;
+    }
+    buttons.forEach((button) => button.addEventListener("click", hideTabContent));
+  </script>

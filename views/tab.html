@@ -1,153 +1,87 @@
-<style>
-    body {
-        box-sizing: border-box;
-        margin: 0;
-        background-color: #0b2035;
-        font-family: "Montserrat", sans-serif;
-    }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../assets/css/boostrap.min.css">
+<link rel="stylesheet" href="../assets/css/tab.css">
 
-    section {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        padding: 75px 10px;
-    }
-
-    h1 {
-        color: #fff;
-    }
-
-    .tab-container {
-        width: 100%;
-        max-width: 800px;
-        min-height: 300px;
-        border: 1px solid #fc7904;
-        background-color: #fff;
-    }
-
-    .tabs {
-        display: flex;
-        overflow: scroll;
-    }
-
-    .tabs button {
-        width: 100%;
-        padding: 10px 20px;
-        border: 1px solid #fc7904;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: #fc7904;
-        color: #fff;
-        opacity: 0.9;
-    }
-
-    .tabs button:hover {
-        opacity: 1;
-    }
-
-    .tabs .non-active {
-        opacity: 0.6;
-    }
-
-    .tab-content {
-        padding: 10px 20px;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    a {
-        color: #fc7904;
-        text-decoration: none;
-    }
-
-    .author {
-        position: absolute;
-        left: 35px;
-        top: 35px;
-        color: #fff;
-    }
-</style>
-
-<section>
-    <h1>Simple Tabs with CSS and Vanilla JavaScript</h1>
-    <div class="tab-container">
-        <!--  Tab Buttons  -->
-        <div class="tabs">
-            <button class="tab active">Intro</button>
-            <button class="tab non-active">Benefits</button>
-            <button class="tab non-active">Disadvantages</button>
-            <button class="tab non-active">Conclusion</button>
-        </div>
-        <!-- Tab Content  -->
-        <div class="tab-content">
-            <h2>Introduction</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet quam vel lacus lobortis
-                fringilla. Vestibulum sit amet velit at risus aliquam facilisis nec a nunc. Praesent tristique laoreet.
-            </p>
-        </div>
-        <div class="tab-content hidden">
-            <h2>Benefits</h2>
-            <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ol>
-        </div>
-        <div class="tab-content hidden">
-            <h2>Disadvantages</h2>
-            <ol>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ol>
-        </div>
-        <div class="tab-content hidden">
-            <h2>Conclusion</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor in purus non sodales. Fusce vitae
-                elit tristique, elementum velit ut, vestibulum tellus. Lorem ipsum. </p>
-        </div>
-    </div>
-</section>
-
-<div class="author">Codepen by <a href="https://webdevartur.com/about/" target="_blank">Artur Burkalo</a></div>
+<div class="mt-5 mx-auto" style="max-width: 65%">
+    <article class="row tabs content--flow align-items-start">
+        <aside class="col-3  sidebar">
+          <nav role="tablist" class="tab__navigation">
+            <button role="tab" aria-selected="true" class="tab__button" id="1">
+              <span class="icon__for--tab">
+                <i class="fa-solid fa-calendar-days"></i>
+              </span>
+              <span class="text__for--tab">Schedule</span>
+            </button>
+            <button role="tab" aria-selected="false" class="tab__button" id="2">
+              <span class="icon__for--tab">
+                <i class="fa-solid fa-capsules"></i>
+              </span>
+              <span class="text__for--tab ">Medicine Dosage</span>
+            </button>
+            <button role="tab" aria-selected="false" class="tab__button" id="3">
+              <span class="icon__for--tab">
+                <i class="fa-brands fa-gratipay"></i>
+              </span>
+              <span class="text__for--tab">Tips</span>
+            </button>
+            </nav>
+        </aside>
+        <main class="col content__area">
+          <div class="tab__content">
+            <div role="tabpanel" aria-labelledby="1">
+              <h1 class="title">Schedule</h1>
+              <span class="span-tag">01</span>
+              <p class="text">
+                Just A basic tab navigation example, nothing fancy. And as always, if
+                you find some improvements or bugs, please let me know!
+              </p>
+            </div>
+            <div role="tabpanel" aria-labelledby="2" hidden>
+              <h1 class="title">Medicine Dosage</h1>
+              <span class="span-tag">02</span>
+      
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                excepturi minus! Id praesentium esse atque veniam ullam vero
+                accusamus, nesciunt libero dolore dignissimos consequatur quas, qui
+                maiores in!
+              </p>
+            </div>
+            <div role="tabpanel" aria-labelledby="3" hidden>
+              <h1 class="title">Tips for life</h1>
+              <span class="span-tag">03</span>
+      
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+                aspernatur doloremque iusto incidunt, asperiores dicta amet ad porro
+                vero quidem.
+              </p>
+            </div>
+            
+            
+          </div>
+        </main>
+      </article>
+</div>
 
 <script>
-    const tabs = document.querySelectorAll(".tab");
-    const tabContent = document.querySelectorAll(".tab-content");
+  const buttons = document.querySelectorAll('[role="tab"]');
+  const tabPanel = Array.from(document.querySelectorAll('[role="tabpanel"]'));
 
-    let tabNo = 0;
-    let contentNo = 0;
-
-    tabs.forEach((tab) => {
-        tab.dataset.id = tabNo;
-        tabNo++;
-        tab.addEventListener("click", function () {
-            tabs.forEach((tab) => {
-                tab.classList.remove("active");
-                tab.classList.add("non-active");
-            });
-            this.classList.remove("non-active");
-            this.classList.add("active");
-            tabContent.forEach((content) => {
-                content.classList.add("hidden");
-                if (content.dataset.id === tab.dataset.id) {
-                    content.classList.remove("hidden");
-                }
-            });
-        });
+  function hideTabContent(e) {
+    tabPanel.forEach((panels) => {
+      panels.hidden = true;
     });
-
-    tabContent.forEach((content) => {
-        content.dataset.id = contentNo;
-        contentNo++;
+    buttons.forEach((tab) => {
+      tab.setAttribute("aria-selected", false);
     });
+    e.currentTarget.setAttribute("aria-selected", true);
+
+    const { id } = event.currentTarget;
+    const tabPanels = tabPanel.find(
+      (tabContent) => tabContent.getAttribute("aria-labelledby") === id
+    );
+    tabPanels.hidden = false;
+  }
+  buttons.forEach((button) => button.addEventListener("click", hideTabContent));
 </script>

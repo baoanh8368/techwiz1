@@ -1,10 +1,10 @@
 var URL = "http://localhost/techwiz";
 app.controller('FeedbackController', function (sessionService, $scope, $interval, $http, $location) {
-    
+
     $interval(function () {
         $scope.theTime = new Date().toString();
     }, 1000);
-    
+
     function getVisitorCounter() {
         $http({
             url: URL + '/JSON/healthplus.json',
@@ -15,11 +15,14 @@ app.controller('FeedbackController', function (sessionService, $scope, $interval
         });
     }
     getVisitorCounter();
-    $scope.name = sessionService.get('username');
+    if (sessionService.get('username')) {
+        $scope.name = sessionService.get('username');
+    }
+    else $scope.name = "";
 
 
-   
-    $scope.submit = function() {
+
+    $scope.submit = function () {
         $location.path('/user');
     }
 });

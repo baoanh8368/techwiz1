@@ -22,6 +22,7 @@ app.controller('Form3Controller', function (sessionService, $scope, $interval, $
     $scope.submit = function() {
         sessionService.set('bp', $scope.user.bp);
         sessionService.set('bs', $scope.user.bs);
+        sessionService.set('bs', $scope.user.hr);
        
         $location.path('/dosage');
     };

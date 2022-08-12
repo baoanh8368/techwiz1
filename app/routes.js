@@ -34,6 +34,10 @@ app.config(['$routeProvider',
 				templateUrl: 'views/BMI.html',
 				controller: 'BMIController'
 			}). 
+			when('/thankyou', {
+				templateUrl: 'views/thankyou.html',
+				controller: 'TYController'
+			}). 
 			when('/feedback', {
 				templateUrl: 'views/feedback.html',
 				controller: 'FeedbackController'

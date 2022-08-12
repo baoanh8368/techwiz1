@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="assets/css/form1.css">
-<script src="assets/js/form1.js"></script>
+<link rel="stylesheet" href="assets/css/med.css">
+
+<script src="assets/js/BMI.js"></script>
 <header class="header" data-header>
     <div class="container">
 
@@ -11,14 +12,12 @@
 
         <nav class="navbar" data-navbar>
 
-            <button class="nav-close-btn" data-nav-toggler>
-                <ion-icon name="close-sharp"></ion-icon>
-            </button>
+
 
             <ul class="navbar-list">
 
                 <li>
-                    <a href="#home" class="navbar-link " data-nav-link>Home</a>
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
                 </li>
 
                 <li>
@@ -30,20 +29,19 @@
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
+
                 <li>
-                    <a href="http://localhost/techwiz/#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>FeedBack</a>
                 </li>
+
             </ul>
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Join Us NOW !</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
+                class="fa-solid fa-user"></i> {{name}}</a>
 
-        <button class="nav-open-btn" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
+
 
     </div>
 </header>
@@ -54,29 +52,37 @@
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
 
-        <form class="form">
-            <h2>TELL US YOUR NAME</h2>
-            <p type="First Name: *"><input ng-model="user.fn" placeholder="How can we call you ?.."></input></p>
-            <p type="Last Name:"><input ng-model="user.ln" placeholder="Write your last name here.."></input></p>
-            
-            <a href="http://localhost/techwiz/#!/basic">
-                <input type="button" value="Continue" class="form-button" ng-click="submit()">
-            </a>
-        </form> 
-        
-        <div class="hero-banner">
+    <form class="form1">
 
-            <img src="./assets/images/doctor4.png" width="660" height="753" alt="hero banner" class="w-100">
 
-            <img src="./assets/images/hero-circle-one.png" width="666" height="666" alt="" class="circle circle-1">
-            <img src="./assets/images/hero-circle-two.png" width="666" height="666" alt="" class="circle circle-2">
-
-            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
-                class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
-
-        </div>
+        <a href="#!/workout"><button class="form-button"><i class="fa-solid fa-person-running"></i> Workout Plans <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/diet"><button class="form-button"><i class="fa-solid fa-carrot"></i> Diet Plans <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/doctor" ><button class="form-button" style="background-color: hsl(12, 98%, 52%); color: white;" ><i class="fa-solid fa-calendar-days"></i> Appointments <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/medicine"><button class="form-button" ><i
+                    class="fa-solid fa-capsules"></i> Your Dosage <i class="fa-solid fa-arrow-right"></i></button></a>
+    </form>
+    <div class="user-content">
+        <<form class="form2" style="height: 600px;" >
+            <h2>YOUR APPOINTMENTS</h2>
+            <p type="Choose the doctor: *"><select name="doctors" ng-model="user.doc" ng-init="user.doc='Dr. Stephen Strange'">
+                <option value="Dr. Stephen Strange">Dr. Stephen Strange</option>
+                <option value="Dr. Harry Potter">Dr. Harry Potter</option>
+                <option value="Dr. Chris Hemsworth">Dr. Chris Hemsworth</option>
+                <option value="Dr. Peter Parker">Dr. Peter Parker</option>
+              </select></p>
+            <p type="Date: *"><input type="datetime-local" ng-model="user.date"></input></p>
+            <p type="Phone Number: *"><input type="number" ng-model="user.phone" ng-pattern="/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/" required></input></p>
+            <p type="Address: "><input type="text" ng-model="user.address" ></input></p>
     </div>
+
+
+
+
+
+
 </section>
 
 
@@ -97,6 +103,7 @@
 
                 <a href="#" class="logo">
                     <img src="assets/images/healthyLogo.png" alt="">
+
                     <span class="span">HealthPlus</span>
                 </a>
 
@@ -195,3 +202,26 @@
 
 
 </footer>
+
+
+<script>
+    const buttons = document.querySelectorAll('[role="tab"]');
+    const tabPanel = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+  
+    function hideTabContent(e) {
+      tabPanel.forEach((panels) => {
+        panels.hidden = true;
+      });
+      buttons.forEach((tab) => {
+        tab.setAttribute("aria-selected", false);
+      });
+      e.currentTarget.setAttribute("aria-selected", true);
+  
+      const { id } = event.currentTarget;
+      const tabPanels = tabPanel.find(
+        (tabContent) => tabContent.getAttribute("aria-labelledby") === id
+      );
+      tabPanels.hidden = false;
+    }
+    buttons.forEach((button) => button.addEventListener("click", hideTabContent));
+  </script>

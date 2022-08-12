@@ -433,6 +433,7 @@ body {
 .logo {
   color: var(--rich-black-fogra-29-1);
   font-family: var(--ff-catamaran);
+  /* font-family: 'Skranji', cursive; */
   font-size: 3.5rem;
   font-weight: var(--fw-900);
   display: flex;
@@ -1122,6 +1123,11 @@ body {
 
   .header .logo {
     color: var(--sky-blue);
+    max-width: 500px;
+  }
+
+  .logo img {
+    max-width: 75px;
   }
 
   .header.active .logo {

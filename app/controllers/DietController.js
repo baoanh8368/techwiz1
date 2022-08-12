@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('UserController', function (sessionService, $scope, $interval, $http, $location) {
+app.controller('DietController', function (sessionService, $scope, $interval, $http) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();

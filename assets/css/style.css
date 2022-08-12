@@ -746,7 +746,7 @@ body {
 }
 
 .footer .logo {
-  color: var(--white);
+  color: var(--sky-blue);
 }
 
 .footer-brand-text {
@@ -1151,7 +1151,7 @@ body {
   }
 
   .header .navbar-link:is(:hover, :focus, .active) {
-    color: var(--sky-blue);
+    color:var(--coquelicot);
   }
 
   .header.active .btn {
@@ -1363,4 +1363,7 @@ body {
     grid-template-columns: 1fr 0.6fr 0.9fr 1fr;
   }
 
+}
+.logo i {
+  color:hsl(12, 98%, 52%);
 }

@@ -36,7 +36,7 @@ app.config(['$routeProvider',
 			}). 
 			when('/feedback', {
 				templateUrl: 'views/feedback.html',
-				controller: 'feedbackController'
+				controller: 'FeedbackController'
 			});
 		
 	}]);

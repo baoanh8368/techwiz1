@@ -1,5 +1,5 @@
 var URL = "http://localhost/techwiz";
-app.controller('HomeController', function ($scope, $interval, $http) {
+app.controller('HomeController', function (sessionService, $scope, $interval) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -7,11 +7,12 @@ app.controller('HomeController', function ($scope, $interval, $http) {
     
     function getVisitorCounter() {
         $http({
-            url: URL + '/api/visitor/visitor.php',
+            url: URL + '/JSON/healthplus.json',
             method: 'GET'
         }).then(function (res) {
             $scope.vcounter = res.data;
         });
     }
     getVisitorCounter();
+
 });

@@ -42,6 +42,14 @@ app.config(['$routeProvider',
 				templateUrl: 'views/diet.html',
 				controller: 'DietController'
 			}). 
+			when('/medicine', {
+				templateUrl: 'views/medicine.html',
+				controller: 'MedicineController'
+			}). 
+			when('/doctor', {
+				templateUrl: 'views/doctor.html',
+				controller: 'DoctorController'
+			}). 
 			when('/feedback', {
 				templateUrl: 'views/feedback.html',
 				controller: 'FeedbackController'

@@ -63,9 +63,9 @@
                 <option value="Dr. Chris Hemsworth">Dr. Chris Hemsworth</option>
                 <option value="Dr. Peter Parker">Dr. Peter Parker</option>
               </select></p>
-            <p type="Date: *"><input type="datetime-local" ng-model="user.date" required></input></p>
-            <p type="Phone Number: *"><input type="number" ng-model="user.phone" required></input></p>
-            <p type="Address: "><input type="number" ng-model="user.address" required></input></p>
+            <p type="Date: *"><input type="datetime-local" ng-model="user.date"></input></p>
+            <p type="Phone Number: *"><input type="number" ng-model="user.phone" ng-pattern="/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/" required></input></p>
+            <p type="Address: "><input type="number" ng-model="user.address" ></input></p>
         
             
             
@@ -96,7 +96,7 @@
 
 
 
-<footer class="footer" style="margin-top: 50px ;">
+<footer class="footer" style="margin-top: 10px;">
 
     <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')"
         id="footer">
@@ -105,7 +105,7 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart" style="color: rgb(63, 190, 248);;"></i>
+                    <i class="fa-solid fa-heart"></i>
 
                     <span class="span">HealthPlus</span>
                 </a>
@@ -145,6 +145,14 @@
                         <a href="" class="footer-link">minh.nv.2045@aptechlearning.edu.vn</a>
                     </div>
                 </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
                 <li>
                     <ul class="social-list">
 
@@ -163,6 +171,11 @@
                         <li>
                             <a href="#" class="social-link">
                                 <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
 

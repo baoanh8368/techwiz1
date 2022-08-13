@@ -13,9 +13,7 @@
 
         <nav class="navbar" data-navbar>
 
-            <button class="nav-close-btn" data-nav-toggler>
-                <ion-icon name="close-sharp"></ion-icon>
-            </button>
+
 
             <ul class="navbar-list">
 
@@ -26,8 +24,10 @@
                 <li>
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
-                
 
+                <li>
+                    <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
+                </li>
 
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
@@ -40,13 +40,7 @@
 
         </nav>
 
-        <a href="#!/form" class="btn btn-secondary">Join Us NOW !</a>
-
-        <button class="nav-open-btn" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
+        <a href="#!/form" class="btn btn-secondary" style="animation: pulse 2s ease infinite;">Join Us NOW !</a>
 
     </div>
 </header>
@@ -61,7 +55,7 @@
         <!-- 
         - #HERO
       -->
-
+        
         <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
             style="background-image: url('./assets/images/hero-bg.png')">
             <div class="container">
@@ -78,8 +72,12 @@
                         Protect your health with this simple checkup.
                     </p>
 
-                    <a href="#!/form" class="btn btn-primary">Get Started</a>
+                    <a href="#!/form" class="btn btn-primary" style="animation: pulse 1.3s ease infinite;">Get
+                        Started</a>
 
+                    <a href="#!/form" class="btn btn-primary"
+                        style="float: right; margin-top: -60px; margin-right: 20px; background-color: hsl(12, 98%, 52%);;">Book
+                        your Appointments !</a>
                 </div>
 
                 <div class="hero-banner">
@@ -93,7 +91,7 @@
 
                     <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
                         class="abs-img abs-img-1">
-                    <img src="./assets/images/calories.svg" width="348" height="224" alt="calories"
+                    <img src="./assets/images/bp.svg" width="348" height="224" alt="bp"
                         class="abs-img abs-img-2">
 
                 </div>
@@ -131,16 +129,21 @@
                     <h2 class="h2 section-title">Welcome To Our Healthcare System</h2>
 
                     <p class="section-text">
-                        Having equal access to quality healthcare is a basic human right. Yet, for many, the reality is
-                        healthcare is either too far away or too expensive. Many are even denied access to health
-                        services because of their gender, age or ethnicity. In other cases, the quality of available
-                        healthcare is too poor to serve the purpose.
+                        We are 10,000 individuals providing safe, quality care in hospitals, labs, physicians’ offices,
+                        outpatient centers, rehab facilities, urgent care clinics, and homes. Our diverse workforce
+                        cares for 200.000 patients annually, and our organization includes:
+
+                        10 entities across the health care continuum
+                        3000 physicians
+                        4500 nurses
+                        It’s our mission to do what’s best for everyone who comes to us, and for the millions more we’ll
+                        never see. Explore the core elements of who we are and what sets us apart from any other health
+                        system in the world.
                     </p>
 
                     <p class="section-text">
-                        At the same time, health is a prerequisite to prosperity. People who do not have access to
-                        healthcare are stuck in a vicious circle of poverty and poor health, which can also lead to
-                        social instability and migration.
+                        A proud legacy behind us; a promising future ahead. With thousands of researchers,
+                        investigators, and clinical trials, HealthPlus is at the forefront of what comes next.
                     </p>
 
                     <div class="wrapper">
@@ -167,6 +170,43 @@
                 </div>
 
             </div>
+            <div class="container">
+                <div class="about-content">
+
+
+                    <h2>Excellence in clinical care</h2>
+
+
+                    <p class="section-text">
+                        Patient safety and quality are at the core of our identity. Through one integrated organization,
+                        we’re empowered by each other to bring the best practices to scale. We leverage research,
+                        technologies, and care models, along with qualified experts, to constantly improve our standard
+                        of care and patient experience.
+                    </p>
+
+                    <p class="section-text">
+                        Diversity, equity, and inclusion impact all parts of our work. We stand committed to building a
+                        diverse workforce to better meet the needs of all our patients. That means working hard to
+                        reflect the communities we serve, across every dimension. We can all learn from each other’s
+                        cultures, perspectives, lifestyles, and backgrounds. In this way, we can create a better care
+                        experience for all.
+                    </p>
+
+
+
+                </div>
+                <div class="about-banner1 has-after">
+                    <img src="./assets/images/bg2.png" width="660" height="648" loading="lazy" alt="about banner"
+                        class="w-100">
+
+
+
+
+                </div>
+
+
+
+            </div>
         </section>
 
 
@@ -186,13 +226,16 @@
                     <h2 class="h2 card-title">Explore Life With Good Health</h2>
                     <a href="https://www.youtube.com/">
                         <button class="play-btn">
-                            <ion-icon name="play-sharp"></ion-icon>
+                            <i class="fa-solid fa-play"></i>
                         </button>
                     </a>
                     <a href="https://www.youtube.com/" class="btn-link has-before">Watch More</a>
 
                 </div>
-
+                <iframe width="1115" height="500" src="https://www.youtube.com/embed/QKukNzye_78"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="margin-top: 20px;"></iframe>
             </div>
         </section>
 
@@ -271,6 +314,14 @@
                     </div>
                     <div>
                         <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div>
+                        <a href="#!/feedback" class="footer-link">Feedback</a>
                     </div>
                 </li>
                 <li>

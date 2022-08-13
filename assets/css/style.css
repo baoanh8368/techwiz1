@@ -1,24 +1,7 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colorsblue
-   */
+
 
   --rich-black-fogra-29_50: hsl(210, 26%, 11%, 0.5);
   --rich-black-fogra-29-1: hsl(210, 26%, 11%);
@@ -89,11 +72,6 @@
 
 
 
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -140,9 +118,6 @@ button {
   cursor: pointer;
 }
 
-ion-icon {
-  pointer-events: none;
-}
 
 address {
   font-style: normal;
@@ -182,12 +157,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container {
   padding-inline: 15px;
@@ -414,7 +383,7 @@ body {
 }
 
 .header {
-  background-color: var(--white);
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -425,15 +394,17 @@ body {
 }
 
 .header>.container {
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(1, 39, 105, 0.1);
 }
 
 .logo {
   color: var(--rich-black-fogra-29-1);
   font-family: var(--ff-catamaran);
-  /* font-family: 'Skranji', cursive; */
+  
   font-size: 3.5rem;
   font-weight: var(--fw-900);
   display: flex;
@@ -458,6 +429,7 @@ body {
   place-content: center;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
+  
 }
 
 .navbar.active {
@@ -600,6 +572,16 @@ body {
   width: 100%;
   height: 50%;
   background-color: var(--sky-blue);
+  border-radius: var(--radius-10);
+  z-index: -2;
+}
+
+.about-banner1::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--coquelicot_20);
   border-radius: var(--radius-10);
   z-index: -2;
 }
@@ -1370,6 +1352,7 @@ body {
   }
 
 }
+
 .logo i {
   color:hsl(12, 98%, 52%);
 }

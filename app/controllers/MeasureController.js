@@ -1,5 +1,5 @@
 //var URL = "http://localhost/techwiz";
-app.controller('BasicController', function (sessionService, $scope, $interval, $http, $location) {
+app.controller('MeasureController', function (sessionService, $scope, $interval, $http) {
     
     $interval(function () {
         $scope.theTime = new Date().toString();
@@ -16,17 +16,12 @@ app.controller('BasicController', function (sessionService, $scope, $interval, $
     }
     getVisitorCounter();
 
-    
-    
     $scope.name = sessionService.get('username');
     
+    var audio = new Audio('assets/audio/health.mp3');
+    $scope.play = function() {
+        audio.play();
+    }
     
-
-    $scope.submit = function() {
-        sessionService.set('gender', $scope.user.gender);
-        sessionService.set('age', $scope.user.age);
-        sessionService.set('height', $scope.user.he);
-        sessionService.set('weight', $scope.user.we);
-        $location.path('/BMI');
-    };
+    
 });

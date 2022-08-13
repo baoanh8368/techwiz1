@@ -26,7 +26,9 @@
                 </li>
 
 
-
+                <li>
+                    <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
+                </li>
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
@@ -39,7 +41,7 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i> {{name}}</a>
+        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i> {{name}}</a>
 
         <button class="nav-open-btn" data-nav-toggler>
             <span class="line"></span>
@@ -54,29 +56,50 @@
 
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
-    <div class="container" >
+    <div class="container">
+        <form class="form1">
 
-        <form class="form"  ng-submit="submit()" style="margin-top: -100px;" >
+
+            <a href="#!/form"><button class="form-button"> <i class="fa-solid fa-user"></i> Tell Us Your Name
+                </button></a>
+            <a href="#!/basic"><button class="form-button"
+                    style="background-color: hsl(12, 98%, 52%); color: white; animation: pulse 2s ease infinite;"> <i
+                        class="fa-solid fa-arrow-right"></i> Caculate your BMI </button></a>
+            <a href="#!/form3"><button class="form-button"><i class="fa-solid fa-heart"></i> Health vitals </button></a>
+            <a href="#!/dosage"><button class="form-button"><i class="fa-solid fa-pills"></i> Your Dosage </button></a>
+            <a href="#!/schedule"><button class="form-button"><i class="fa-solid fa-calendar"></i> Book your appointment
+                </button></a>
+            <a href="#!/diet"><button class="form-button" style="background-color: rgb(94, 235, 94);"><i
+                        class="fa-solid fa-user-doctor"></i> Reach your health potential ! </button></a>
+        </form>
+        <form class="form" ng-submit="submit()" style="margin-top: -100px;">
             <h2 style="width: 100%">More Info</h2>
 
-        
-            
+
+
             <div class="gender">
                 <label for="">Male</label>
                 <input type="radio" ng-model="user.gender" value="Male" ng-submit="submit()">
             </div>
-            <div class="gender" >
+            <div class="gender">
                 <label for="">Female</label>
                 <input type="radio" ng-model="user.gender" value="Female" ng-init="user.gender='Female'">
             </div>
-            
-            <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?" required></p>
-            <p type="Height:"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required></p>
-            <p type="Weight:"><input type="number" ng-model="user.we" placeholder="Your weight ? (Kg)" required></p>
-            <input type="submit" value="Continue"   class="form-button">
-            
+
+            <p type="Age:"><input type="number" ng-model="user.age" placeholder="How old are you ?"></p>
+            <p type="Height(centimet): *"><input type="number" ng-model="user.he" placeholder="Your height ? (Centimet)" required>
+            </p>
+            <p type="Weight(): *"><input type="number" ng-model="user.we" placeholder="Your weight ? (Kg)" required></p>
+
+            <input type="submit" value="Continue" class="form-button">
+            <a href="#!/form3">
+                <input type="button" value="Skip" class="form-button2">
+            </a>
+
+
+
         </form>
-        
+
         <div class="hero-banner">
 
             <img src="./assets/images/doctor5.png" width="660" height="753" alt="hero banner" class="w-100">
@@ -86,7 +109,7 @@
 
             <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
                 class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+            <img src="./assets/images/bp.svg" width="348" height="224" alt="bp" class="abs-img abs-img-2">
 
         </div>
     </div>
@@ -155,6 +178,14 @@
                     </div>
                     <div>
                         <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div>
+                        <a href="#!/feedback" class="footer-link">Feedback</a>
                     </div>
                 </li>
                 <li>

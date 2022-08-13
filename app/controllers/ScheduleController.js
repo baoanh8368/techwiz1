@@ -1,4 +1,4 @@
-var URL = "http://localhost/techwiz";
+//var URL = "http://localhost/techwiz";
 app.controller('ScheduleController', function (sessionService, $scope, $interval, $http, $location) {
     
     $interval(function () {

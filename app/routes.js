@@ -50,6 +50,10 @@ app.config(['$routeProvider',
 				templateUrl: 'views/doctor.html',
 				controller: 'DoctorController'
 			}). 
+			when('/measure', {
+				templateUrl: 'views/measure.html',
+				controller: 'MeasureController'
+			}). 
 			when('/feedback', {
 				templateUrl: 'views/feedback.html',
 				controller: 'FeedbackController'

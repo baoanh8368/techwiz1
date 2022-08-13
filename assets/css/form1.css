@@ -1,22 +1,38 @@
-
-
-
 .form {
-    
+
     width: 500px;
-    
+
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    
+    margin-left: 80px;
     padding: 20px 30px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    
     position: static;
     display: inline-block;
     margin-bottom: 200px;
     margin-top: -100px;
+}
+
+.form1 {
+
+    width: 200px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    margin-left: -200px;
+    position: static;
+    display: inline-block;
+    margin-bottom: 200px;
+    margin-top: -100px;
+    position: fixed;
+    top: 300px;
 }
 
 h2 {
@@ -27,7 +43,8 @@ h2 {
     border-bottom: 3px solid rgb(63, 190, 248);
 }
 
-input, select{
+input,
+select {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -35,7 +52,7 @@ input, select{
     outline: none;
     resize: none;
     border: 0;
-    font-family: 'Montserrat', sans-serif;
+    
     transition: all .3s;
     border-bottom: 2px solid rgb(63, 190, 248);
 }
@@ -58,7 +75,7 @@ p:before {
     float: right;
     padding: 8px 12px;
     margin: 8px 0 0;
-    font-family: 'Montserrat', sans-serif;
+    
     border: 2px solid rgb(63, 190, 248);
     background: 0;
     color: #5a5a6e;
@@ -66,6 +83,29 @@ p:before {
     transition: all .3s;
     margin-top: 40px;
     background-color: rgb(63, 190, 248);
+    width: 200px;
+}
+
+.form-button2 {
+    float: right;
+    padding: 10px 12px;
+    margin: 8px 0 0;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 40px;
+    background-color: hsl(12, 98%, 52%);
+    width: 100px;
+    border: none;
+}
+
+.form1 .form-button{
+    margin: 5px auto;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 13px;
+    border: none;
     
 }
 
@@ -88,6 +128,5 @@ p:before {
 .gender input {
     width: 70%;
     height: 70%;
-    
-}
 
+}

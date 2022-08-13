@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="assets/css/form1.css">
+<link rel="stylesheet" href="assets/css/med.css">
 
 <header class="header" data-header>
     <div class="container">
@@ -9,6 +9,7 @@
             <span class="span">HealthPlus</span>
         </a>
 
+
         <nav class="navbar" data-navbar>
 
 
@@ -16,7 +17,7 @@
             <ul class="navbar-list">
 
                 <li>
-                    <a href="#home" class="navbar-link " data-nav-link>Home</a>
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
                 </li>
 
                 <li>
@@ -30,15 +31,17 @@
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
-                <li>
-                    <a href="#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
-                </li>
-            </ul>
 
+                <li>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>FeedBack</a>
+                </li>
+
+            </ul>
 
         </nav>
 
-        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
+                class="fa-solid fa-user"></i> {{name}}</a>
 
 
 
@@ -48,60 +51,43 @@
 
 
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
-    style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
-    <div class="container">
-        <form class="form1">
+    style="background-image: url('./assets/images/hero-bg.png'); height: 900px;">
 
 
-            <a href="#!/form"><button class="form-button"> <i class="fa-solid fa-user"></i> Tell Us Your Name
-                </button></a>
-            <a href="#!/basic"><button class="form-button"> <i class="fa-solid fa-child"></i> Caculate your BMI
-                </button></a>
-            <a href="#!/form3"><button class="form-button"><i class="fa-solid fa-heart"></i> Health vitals </button></a>
-            <a href="#!/dosage"><button class="form-button"> <i class="fa-solid fa-pills"></i> Your Dosage </button></a>
-            <a href="#!/schedule"><button class="form-button"
-                    style="background-color: hsl(12, 98%, 52%); color: white; animation: pulse 2s ease infinite;"> <i
-                        class="fa-solid fa-arrow-right"></i> Book your appointment
-                </button></a>
-            <a href="#!/diet"><button class="form-button" style="background-color: rgb(94, 235, 94);"><i
-                        class="fa-solid fa-user-doctor"></i> Reach your health potential ! </button></a>
-        </form>
-        <form class="form" style="height: 600px;" ng-submit="submit()">
-            <h2>YOUR APPOINTMENTS</h2>
-            <p type="Choose the doctor: *"><select name="doctors" ng-model="user.doc"
-                    ng-init="user.doc='Dr. Stephen Strange'">
-                    <option value="Dr. Stephen Strange">Dr. Stephen Strange</option>
-                    <option value="Dr. Harry Potter">Dr. Harry Potter</option>
-                    <option value="Dr. Chris Hemsworth">Dr. Chris Hemsworth</option>
-                    <option value="Dr. Peter Parker">Dr. Peter Parker</option>
-                </select></p>
-            <p type="Date: *"><input type="datetime-local" ng-model="user.date"></input></p>
-            <p type="Phone Number: *"><input type="number" ng-model="user.phone"
-                    ng-pattern="/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/" ></input></p>
-            <p type="Address: "><input type="text" ng-model="user.address"></input></p>
+    <form class="form1">
+
+
+        <a href="#!/workout"><button class="form-button"><i class="fa-solid fa-person-running"></i> Workout Tips <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/diet"><button class="form-button"><i class="fa-solid fa-carrot"></i> Diet Tips <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/doctor"><button class="form-button"><i class="fa-solid fa-calendar-days"></i> Appointments <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/medicine"><button class="form-button"><i class="fa-solid fa-capsules"></i> Your Dosage <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#!/measure"><button class="form-button" style="background-color: hsl(12, 98%, 52%); color: white;"><i
+                    class="fa-solid fa-book-medical"></i> Health measures <i
+                    class="fa-solid fa-arrow-right"></i></button></a>
+    </form>
+    <div class="user-content">
+        <form class="form2" style="height: 530px; width: 900px;">
+
+
+            <h1> Your Health Measurements </h1>
+
+            <button class="form-button" ng-click="play()" style="width: 80px;"> <i class="fa-solid fa-play"></i></button>
 
 
 
-            <input type="submit" value="Continue" class="form-button">
-            <a href="#!/diet">
-                <input type="button" value="Skip" class="form-button2">
-            </a>
 
         </form>
-
-        <div class="hero-banner">
-
-            <img src="./assets/images/doctor9.png" width="660" height="753" alt="hero banner" class="w-100">
-
-            <img src="./assets/images/hero-circle-one.png" width="666" height="666" alt="" class="circle circle-1">
-            <img src="./assets/images/hero-circle-two.png" width="666" height="666" alt="" class="circle circle-2">
-
-            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
-                class="abs-img abs-img-1">
-            <img src="./assets/images/bp.svg" width="348" height="224" alt="bp" class="abs-img abs-img-2">
-
-        </div>
     </div>
+
+
+
+
+
+
 </section>
 
 
@@ -121,10 +107,11 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart"></i>
-
+                    <!-- <i class="fa-solid fa-heart"></i> -->
+                    <img src="assets/images/healthyLogo.png" alt="">
                     <span class="span">HealthPlus</span>
                 </a>
+
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7295561235906!2d105.84769451485397!3d21.00347528601206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad58455db2ab%3A0x9b3550bc22fd8bb!2zNTQgUC4gTMOqIFRoYW5oIE5naOG7iywgQsOhY2ggS2hvYSwgSGFpIELDoCBUcsawbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1659676268072!5m2!1sen!2s"

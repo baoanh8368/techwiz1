@@ -11,10 +11,7 @@
 
         <nav class="navbar" data-navbar>
 
-            <button class="nav-close-btn" data-nav-toggler>
-                <ion-icon name="close-sharp"></ion-icon>
-            </button>
-
+           
             <ul class="navbar-list">
 
                 <li>
@@ -25,26 +22,23 @@
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
 
-
+                <li>
+                    <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
+                </li>
 
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
                 <li>
-                    <a href="http://localhost/techwiz/#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
                 </li>
             </ul>
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Join Us NOW !</a>
+        <a href="#!/form" class="btn btn-secondary">Join Us NOW !</a>
 
-        <button class="nav-open-btn" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-
+       
     </div>
 </header>
 
@@ -53,7 +47,17 @@
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
+        <form class="form1">
+            
 
+            <a href="#!/form"><button class="form-button" style="background-color: hsl(12, 98%, 52%); color: white; animation: pulse 2s ease infinite;"> <i
+                class="fa-solid fa-arrow-right"></i> Tell Us Your Name </button></a>
+            <a href="#!/basic"><button class="form-button"><i class="fa-solid fa-child"></i> Caculate your BMI </button></a>
+            <a href="#!/form3" ><button class="form-button"  ><i class="fa-solid fa-heart"></i> Health vitals </button></a>
+            <a href="#!/dosage"><button class="form-button" ><i class="fa-solid fa-pills"></i> Your  Dosage </button></a>
+            <a href="#!/schedule"><button class="form-button" ><i class="fa-solid fa-calendar"></i> Book your appointment </button></a>
+            <a href="#!/diet"><button class="form-button" style="background-color: rgb(87, 238, 87);" ><i class="fa-solid fa-user-doctor"></i> Reach your health potential ! </button></a>
+        </form>
         <form class="form">
             <h2>TELL US YOUR NAME</h2>
             <p type="First Name: *"><input ng-model="user.fn" placeholder="How can we call you ?.."></input></p>
@@ -73,9 +77,10 @@
 
             <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
                 class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+            <img src="./assets/images/bp.svg" width="348" height="224" alt="bp" class="abs-img abs-img-2">
 
         </div>
+       
     </div>
 </section>
 
@@ -141,6 +146,14 @@
                     </div>
                     <div>
                         <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div>
+                        <a href="#!/feedback" class="footer-link">Feedback</a>
                     </div>
                 </li>
                 <li>

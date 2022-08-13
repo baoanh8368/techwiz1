@@ -1,4 +1,4 @@
-var URL = "http://localhost/techwiz";
+//var URL = "http://localhost/techwiz";
 app.controller('Form3Controller', function (sessionService, $scope, $interval, $http, $location) {
     
     $interval(function () {
@@ -20,10 +20,6 @@ app.controller('Form3Controller', function (sessionService, $scope, $interval, $
     $scope.name = sessionService.get('username');
     
     $scope.submit = function() {
-        sessionService.set('bp', $scope.user.bp);
-        sessionService.set('bs', $scope.user.bs);
-        sessionService.set('bs', $scope.user.hr);
-       
         $location.path('/dosage');
     };
 });

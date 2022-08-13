@@ -4,16 +4,15 @@
     <div class="container">
 
         <a href="#" class="logo">
-            <i class="fa-solid fa-heart"></i>
-
+            <!-- <i class="fa-solid fa-heart"></i> -->
+            <img src="assets/images/healthyLogo.png" alt="">
             <span class="span">HealthPlus</span>
         </a>
 
+
         <nav class="navbar" data-navbar>
 
-            <button class="nav-close-btn" data-nav-toggler>
-                <ion-icon name="close-sharp"></ion-icon>
-            </button>
+
 
             <ul class="navbar-list">
 
@@ -25,27 +24,24 @@
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
 
-
+                <li>
+                    <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
+                </li>
 
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
                 <li>
-                    <a href="http://localhost/techwiz/#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
                 </li>
 
             </ul>
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
-                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
-        <button class="nav-open-btn" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
+
 
     </div>
 </header>
@@ -55,10 +51,24 @@
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
     <div class="container">
+        <form class="form1">
 
+
+            <a href="#!/form"><button class="form-button"> <i class="fa-solid fa-user"></i> Tell Us Your Name
+                </button></a>
+            <a href="#!/basic"><button class="form-button"> <i class="fa-solid fa-child"></i> Caculate your BMI
+                </button></a>
+            <a href="#!/form3"><button class="form-button"><i class="fa-solid fa-heart"></i> Health vitals </button></a>
+            <a href="#!/dosage"><button class="form-button"
+                    style="background-color: hsl(12, 98%, 52%); color: white; animation: pulse 2s ease infinite;"> <i class="fa-solid fa-arrow-right"></i> Your Dosage </button></a>
+            <a href="#!/schedule"><button class="form-button"><i class="fa-solid fa-calendar"></i> Book your appointment
+                </button></a>
+            <a href="#!/diet"><button class="form-button" style="background-color: rgb(94, 235, 94);"><i
+                        class="fa-solid fa-user-doctor"></i> Reach your health potential ! </button></a>
+        </form>
         <form class="form" style="height: 600px;" ng-submit="submit()">
             <h2 style="width: 400px">YOUR MEDICINE DOSAGE</h2>
-            <p type="Medicine {{index}}:"><input type="text" ng-model="user.med"
+            <p type="Medicine {{number}}:"><input type="text" ng-model="user.med"
                     placeholder="Your Medicine... "></input></p>
             <p type="From Date:"><input type="date" ng-model="user.fd" placeholder="From when... "></input></p>
             <p type="To Date:"><input type="date" ng-model="user.td" placeholder="To when... "></input></p>
@@ -84,6 +94,9 @@
 
 
             <input type="submit" value="Continue" class="form-button">
+            <a href="#!/schedule">
+                <input type="button" value="Skip" class="form-button2">
+            </a>
 
         </form>
 
@@ -96,7 +109,7 @@
 
             <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
                 class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+            <img src="./assets/images/bp.svg" width="348" height="224" alt="bp" class="abs-img abs-img-2">
 
         </div>
     </div>
@@ -119,8 +132,8 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <i class="fa-solid fa-heart"></i>
-
+                    <!-- <i class="fa-solid fa-heart"></i> -->
+                    <img src="assets/images/healthyLogo.png" alt="">
                     <span class="span">HealthPlus</span>
                 </a>
 

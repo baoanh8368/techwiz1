@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="assets/css/form1.css">
-<link rel="stylesheet" href="assets/css/BMI.css">
-<script src="assets/js/BMI.js"></script>
+
 <header class="header" data-header>
     <div class="container">
 
@@ -12,36 +11,43 @@
 
         <nav class="navbar" data-navbar>
 
+            <button class="nav-close-btn" data-nav-toggler>
+                <ion-icon name="close-sharp"></ion-icon>
+            </button>
 
             <ul class="navbar-list">
 
                 <li>
-                    <a href="#home" class="navbar-link " data-nav-link>Home</a>
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
                 </li>
 
                 <li>
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
 
+
                 <li>
                     <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
                 </li>
-
                 <li>
                     <a href="#!/contact" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
+
                 <li>
-                    <a href="#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>FeedBack</a>
                 </li>
 
             </ul>
 
         </nav>
 
-        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i
-                class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
+        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i class="fa-solid fa-user"></i> {{name}}</a>
 
-     
+        <button class="nav-open-btn" data-nav-toggler>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
 
     </div>
 </header>
@@ -49,46 +55,41 @@
 
 
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
-    style="background-image: url('./assets/images/hero-bg.png'); height: 800px;">
+    style="background-image: url('./assets/images/hero-bg.png'); height: 900px;">
     <div class="container">
-        <div class="bmi" style="margin-top: -200px;">
-            <h2 > YOUR BMI : {{bmi}} </h2>
-            <h3 > {{bodytype}}</h3>
-            <a href="#!/form3" class="btn btn-secondary" style="margin-bottom: 40px;margin-top: 20px; margin-left:120px;" >Continue <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-        </div>
+       
+        <form class="form" style="margin-top: -80px; margin-left: -30px; width: 500px;">
+            <h2 style="width: 100%">Ready to get healthy? Contact us today.</h2>
 
-        <img src="assets/images/{{content}}" alt="image" style="margin-left: 80px;">
-
-        <div class="alltabs">
-
-            <div class="tab-container">
-                <!--  Tab Buttons  -->
-                <div class="tabs">
-                    <button class="tab active">Status</button>
-                    <button class="tab non-active">Risk</button>
-                    <button class="tab non-active">Suggestion</button>
-
-                </div>
-                <!-- Tab Content  -->
-                <div class="tab-content">
-                    <h2 style="width: 400px; font-size: 20px;">{{status}}</h2>
-
-                </div>
-                <div class="tab-content hidden">
-                    <h2 style="width: 400px; font-size: 20px;">{{risk}}</h2>
-                </div>
-                <div class="tab-content hidden">
-                    <a href="https://www.goodhousekeeping.com/health/fitness/g33326349/best-youtube-workouts/">
-                        <h2 style="width: 400px; font-size: 20px;">20+ Best YouTube Workout Channels for Every Type of
-                            Fitness</h2>
-                    </a>
-                    <p>These free options include yoga, HIIT, and dance classes from our favorite instructors.</p>
-                </div>
-            </div>
-        </div>
-        
+            <h3 style="text-align: center;">Phone Number: 0523.917.089</h3>
+            <h3 style="text-align: center">Email Us: minh.nv.2045@aptechlearning.edu.vn</h3>
+            <h3 style="text-align: center">Visit us at: 54 Le Thanh Nghi Street, Hai Ba Trung, Ha Noi</h3>
+            
+            
+          
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7295561235906!2d105.84769451485397!3d21.00347528601206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad58455db2ab%3A0x9b3550bc22fd8bb!2zNTQgUC4gTMOqIFRoYW5oIE5naOG7iywgQsOhY2ggS2hvYSwgSGFpIELDoCBUcsawbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1659676268072!5m2!1sen!2s"
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+            
+            
 
 
+        </form>
+        <form class="form" style="margin-top: -80px; width: 500px;">
+            <h2 style="width: 100%">Feel free to ask us any question</h2>
+            <p type="Your Name: "><input  placeholder="How can we call you ?.."></input></p>
+            <p type="Your Email: "><input  placeholder="Tell us your email address.."></input></p>
+            <p type="Your Phone Number: "><input  placeholder="Tell us your phone number.."></input></p>
+            <p type="Your Message: "><textarea   style="width: 100%; border: 2px solid rgb(63, 190, 248); height: 120px;"></textarea ></p>
+            <input type="button" value="Send Message" class="form-button">
+            
+
+
+        </form>
+
+       
     </div>
 </section>
 

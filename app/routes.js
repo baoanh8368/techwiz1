@@ -54,6 +54,10 @@ app.config(['$routeProvider',
 				templateUrl: 'views/measure.html',
 				controller: 'MeasureController'
 			}). 
+			when('/contact', {
+				templateUrl: 'views/contact.html',
+				controller: 'ContactController'
+			}). 
 			when('/feedback', {
 				templateUrl: 'views/feedback.html',
 				controller: 'FeedbackController'

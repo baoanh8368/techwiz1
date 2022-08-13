@@ -12,9 +12,6 @@
 
         <nav class="navbar" data-navbar>
 
-            <button class="nav-close-btn" data-nav-toggler>
-                <ion-icon name="close-sharp"></ion-icon>
-            </button>
 
             <ul class="navbar-list">
 
@@ -26,27 +23,25 @@
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
 
-
+                <li>
+                    <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
+                </li>
 
                 <li>
                     <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
                 <li>
-                    <a href="http://localhost/techwiz/#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
+                    <a href="#!/feedback" class="navbar-link" data-nav-link>Feedback</a>
                 </li>
 
             </ul>
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
+        <a href="#!/workout" class="btn btn-secondary">Welcome&nbsp; <i
                 class="fa-solid fa-user"></i>&nbsp;{{name}}</a>
 
-        <button class="nav-open-btn" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
+     
 
     </div>
 </header>
@@ -59,7 +54,7 @@
         <div class="bmi" style="margin-top: -200px;">
             <h2 > YOUR BMI : {{bmi}} </h2>
             <h3 > {{bodytype}}</h3>
-            <a href="http://localhost/techwiz/#!/form3" class="btn btn-secondary" style="margin-bottom: 40px;margin-top: 20px; margin-left:120px;" >Continue <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            <a href="#!/form3" class="btn btn-secondary" style="margin-bottom: 40px;margin-top: 20px; margin-left:120px;" >Continue <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </div>
 
         <img src="assets/images/{{content}}" alt="image" style="margin-left: 80px;">

@@ -88,6 +88,30 @@ p:before {
 }
 
 
+table {
+    border-collapse: collapse;
+    width: 950px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
 
+td,
+th, tfoot {
+    padding: 10px;
+    padding-left: 15px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+tbody {
+    background-color: gainsboro;
+}
+
+th, tfoot {
+    padding-top: 15px;
+    padding-bottom: 18px;
+    background: #343a40;
+    color: white;
+    text-align: center;
+}
 
 

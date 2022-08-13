@@ -70,34 +70,49 @@
                     class="fa-solid fa-arrow-right"></i></button></a>
     </form>
     <div class="user-content">
-        <form class="form2" style="height: 530px; width: 900px;">
+        <form class="form2" style="height: 530px; width: 1000px;">
 
 
             <h1> Manage your Appointment </h1>
 
-            <p type="Medicine :"><input type="text" ng-model="user.med" placeholder="Your Medicine... "></input></p>
-            <p type="From Date:"><input type="date" ng-model="user.fd" placeholder="From when... "></input></p>
-            <p type="To Date:"><input type="date" ng-model="user.td" placeholder="To when... "></input></p>
-            <table style="margin-top: 20px; margin-bottom: -30px;">
-                <tr>
-                    <th>Day</th>
-                    <th>Night</th>
-                    <th style=" padding-left: 40px; "><input type="button" value="Add more medicine" ng-click="add()"
-                            class="form-button" style="width: 100%; margin: 0px; background-color: #32cd32;"></th>
-                </tr>
-                <tr>
-                    <td><input type="number" ng-model="user.day" style="width: 50px;" min="0"
-                            ng-init="user.day=0"></input></td>
-                    <td><input type="number" ng-model="user.night" style="width: 50px;" min="0"
-                            ng-init="user.night=0"></input></td>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Date(mm/dd/yy)</th>
+                        <th>Your Phone Number</th>
+                        <th>Your Address</th>
+                        <th>Doctor Email</th>
+                        <th>Your Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Stephen Strange</td>
+                        <td>08/13/2022 09:18 PM</td>
+                        <td>0123456789</td>
+                        <td>Hai Ba Trung district, Ha Noi</td>
+                        <td>drstrange@aptech.edu.vn</td>
+                        <td>myemail@aptech.edu.vn</td>
+                    </tr>
+                </tbody>
+                <tfoot>
 
-                </tr>
-                <tr>
-                    <td>Tablet</td>
-                    <td>Tablet</td>
-                </tr>
+                    <tr>
+                        <td colspan="6" style="background-color: rgb(76, 176, 229);"> <a href="#!/schedule"> <u>CLICK
+                                    HERE
+                                    TO CHANGE YOUR APPOINTMENT</u></a></td>
+                    </tr>
+                    <tr style="background-color: rgb(109, 239, 112);">
+                        <td colspan="6">TIPS : Fats consumed should be less than 30% of your total energy intake. This
+                            will help prevent unhealthy weight gain and NCDs. There are different types of fats, but
+                            unsaturated fats are preferable over saturated fats and trans-fats. WHO recommends reducing
+                            saturated fats to less than 10% of total energy intake; reducing trans-fats to less than 1%
+                            of total energy intake; and replacing both saturated fats and trans-fats to unsaturated
+                            fats.</td>
+                    </tr>
+                </tfoot>
             </table>
-
 
 
 

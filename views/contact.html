@@ -1,18 +1,17 @@
-<link rel="stylesheet" href="assets/css/med.css">
+<link rel="stylesheet" href="assets/css/form1.css">
 
 <header class="header" data-header>
     <div class="container">
 
         <a href="#" class="logo">
-            <!-- <i class="fa-solid fa-heart"></i> -->
             <img src="assets/images/healthyLogo.png" alt="">
+
             <span class="span">HealthPlus</span>
         </a>
 
-
         <nav class="navbar" data-navbar>
 
-
+            
 
             <ul class="navbar-list">
 
@@ -24,10 +23,10 @@
                     <a href="#about" class="navbar-link" data-nav-link>About Us</a>
                 </li>
 
+
                 <li>
                     <a href="#!/schedule" class="navbar-link" data-nav-link>Book A Doctor</a>
                 </li>
-
                 <li>
                     <a href="#!/contact" class="navbar-link" data-nav-link>Contact Us</a>
                 </li>
@@ -40,10 +39,9 @@
 
         </nav>
 
-        <a href="http://localhost/techwiz/#!/form" class="btn btn-secondary">Welcome&nbsp; <i
-                class="fa-solid fa-user"></i> {{name}}</a>
+        <a href="#!/workout" class="btn btn-secondary">JOIN US TODAY !</a>
 
-
+      
 
     </div>
 </header>
@@ -52,82 +50,41 @@
 
 <section class="section hero bg-dark has-after has-bg-image" id="home" data-section
     style="background-image: url('./assets/images/hero-bg.png'); height: 900px;">
+    <div class="container">
+       
+        <form class="form" style="margin-top: -80px; margin-left: -30px; width: 500px;">
+            <h2 style="width: 100%">Ready to get healthy? Contact us today.</h2>
 
-
-    <form class="form1">
-
-
-        <a href="#!/workout"><button class="form-button"><i class="fa-solid fa-person-running"></i> Workout Tips <i
-                    class="fa-solid fa-arrow-right"></i></button></a>
-        <a href="#!/diet"><button class="form-button"><i class="fa-solid fa-carrot"></i> Diet Tips <i
-                    class="fa-solid fa-arrow-right"></i></button></a>
-        <a href="#!/doctor"><button class="form-button"><i class="fa-solid fa-calendar-days"></i> Appointments <i
-                    class="fa-solid fa-arrow-right"></i></button></a>
-        <a href="#!/medicine"><button class="form-button"><i class="fa-solid fa-capsules"></i> Your Dosage <i
-                    class="fa-solid fa-arrow-right"></i></button></a>
-        <a href="#!/measure"><button class="form-button" style="background-color: hsl(12, 98%, 52%); color: white;"><i
-                    class="fa-solid fa-book-medical"></i> Health measures <i
-                    class="fa-solid fa-arrow-right"></i></button></a>
-    </form>
-    <div class="user-content">
-        <form class="form2" style="height: 450px; width: 1000px;">
-
-
-            <h1> Your Health Measurements </h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Height (cm)</th>
-                        <th>Weight (kg)</th>
-                        <th>BMI</th>
-                        <th>Heart Rate (BPM)</th>
-                        <th>Blood Pressure (mmHg)</th>
-                        <th>Blood Sugar (mg/dL)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="color: black">
-                        <td>{{age}}</td>
-                        <td>{{gender}}</td>
-                        <td>{{height}}</td>
-                        <td>{{weight}}</td>
-                        <td>{{bmi}}</td>
-                        <td>{{heartrate}}</td>
-                        <td>{{bp}}</td>
-                        <td>{{bs}}</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="6">Click this button to play health measure audio</td>
-                        <td colspan="2"><button class="form-button" ng-click="play()" style="width: 80px; margin: 0 auto;" > <i
-                                    class="fa-solid fa-play"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="8" style="background-color: rgb(76, 176, 229);"> <a href="#!/basic"> <u>CLICK HERE TO CHANGE YOUR HEALTH MEASUREMENTS</u></a></td>
-                    </tr>
-                    <tr style="background-color: rgb(109, 239, 112);">
-                        <td colspan="8">TIPS : Researchers agree that the best defense against any viral infection is having a
-                            strong immune system. Be better prepared to face the COVID-19 challenge by boosting your
-                            immunity.</td>
-                    </tr>
-                </tfoot>
-            </table>
-
-
-
+            <h3 style="text-align: center;">Phone Number: 0523.917.089</h3>
+            <h3 style="text-align: center">Email Us: minh.nv.2045@aptechlearning.edu.vn</h3>
+            <h3 style="text-align: center">Visit us at: 54 Le Thanh Nghi Street, Hai Ba Trung, Ha Noi</h3>
+            
+            
+          
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7295561235906!2d105.84769451485397!3d21.00347528601206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad58455db2ab%3A0x9b3550bc22fd8bb!2zNTQgUC4gTMOqIFRoYW5oIE5naOG7iywgQsOhY2ggS2hvYSwgSGFpIELDoCBUcsawbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1659676268072!5m2!1sen!2s"
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+            
+            
 
 
         </form>
+        <form class="form" style="margin-top: -80px; width: 500px;">
+            <h2 style="width: 100%">Feel free to ask us any question</h2>
+            <p type="Your Name: "><input  placeholder="How can we call you ?.."></input></p>
+            <p type="Your Email: "><input  placeholder="Tell us your email address.."></input></p>
+            <p type="Your Phone Number: "><input  placeholder="Tell us your phone number.."></input></p>
+            <p type="Your Message: "><textarea   style="width: 100%; border: 2px solid rgb(63, 190, 248); height: 120px;"></textarea ></p>
+            <input type="button" value="Send Message" class="form-button">
+            
+
+
+        </form>
+
+       
     </div>
-
-
-
-
-
-
 </section>
 
 
@@ -147,11 +104,10 @@
             <div class="footer-brand">
 
                 <a href="#" class="logo">
-                    <!-- <i class="fa-solid fa-heart"></i> -->
                     <img src="assets/images/healthyLogo.png" alt="">
+
                     <span class="span">HealthPlus</span>
                 </a>
-
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7295561235906!2d105.84769451485397!3d21.00347528601206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad58455db2ab%3A0x9b3550bc22fd8bb!2zNTQgUC4gTMOqIFRoYW5oIE5naOG7iywgQsOhY2ggS2hvYSwgSGFpIELDoCBUcsawbmcsIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1659676268072!5m2!1sen!2s"
@@ -194,6 +150,14 @@
                     </div>
                     <div>
                         <a href="" class="footer-link">0523.917.089</a>
+                    </div>
+                </li>
+                <li class="footer-list-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div>
+                        <a href="#!/feedback" class="footer-link">Feedback</a>
                     </div>
                 </li>
                 <li>

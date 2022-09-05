@@ -22,6 +22,20 @@ app.controller('MeasureController', function (sessionService, $scope, $interval,
     $scope.play = function() {
         audio.play();
     }
-    
-    
+    function getHealth() {
+        $http({
+            url: URL + '/JSON/healthplus.json',
+            method: 'GET'
+        }).then(function (res) {
+            $scope.age = res.data.age;
+            $scope.gender = res.data.gender;
+            $scope.height = res.data.height;
+            $scope.weight = res.data.weight;
+            $scope.bmi = res.data.bmi;
+            $scope.heartrate = res.data.heartrate;
+            $scope.bp = res.data.bp;
+            $scope.bs = res.data.bs;
+        });
+    }
+    getHealth();
 });
